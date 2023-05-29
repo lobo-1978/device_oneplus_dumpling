@@ -2598,10 +2598,17 @@
     <path name="voice-headphones">
         <path name="headphones" />
         <ctl name="RX HPH Mode" value="CLS_H_LP" />
+        <ctl name="RX1 Digital Volume" value="84" />
+        <ctl name="RX2 Digital Volume" value="84" />
+        <ctl name="Configuration" value="0" />
     </path>
 
     <path name="voice-line">
         <path name="voice-headphones" />
+    </path>
+    
+    <path name="voice-headset">
+    	<path name="headphones" />
     </path>
 
     <path name="voice-headset-mic">
@@ -3062,6 +3069,7 @@
     <path name="unprocessed-handset-mic">
         <path name="handset-mic" />
     </path>
+    
 
     <path name="unprocessed-mic">
         <path name="unprocessed-handset-mic" />
