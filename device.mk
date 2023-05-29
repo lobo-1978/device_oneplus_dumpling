@@ -5,11 +5,14 @@
 #
 
 $(call inherit-product, vendor/oneplus/dumpling/dumpling-vendor.mk)
+#$(call inherit-product, vendor/gapps/arm64/arm64-vendor.mk)
+#(call inherit-product-if-exists, vendor/foss/foss.mk)
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-banana
 
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
